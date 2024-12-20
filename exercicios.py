@@ -98,8 +98,29 @@
 
 
 # 15 - Escreva um programa que concatene duas strings fornecidas pelo usuário.
-texto1 = input("Parte 1: ").strip()
-texto2 = input("Parte 2: ").strip()
-texto_final = texto1 + texto2
-print("Texto concatenado: ", texto_final)
+# texto1 = input("Parte 1: ").strip()
+# texto2 = input("Parte 2: ").strip()
+# texto_final = texto1 + texto2
+# print("Texto concatenado: ", texto_final)
+
+#Booleanos (bool)
+# 16 - Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+# valor1 = True
+# valor2 = False
+# resultado = valor1 and valor2
+# print(resultado)
+
+
+# 17 - Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+valor1 = False
+valor2 = True
+resultado = valor1 or valor2
+print(resultado)
+
+# 18 - Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+# 19 - Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+# 20 - Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
 
