@@ -124,12 +124,15 @@
 # print(resultado)
 
 # 19 - Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
-x = 1
-y = 30
-resultado_bool = (x == y)
-print(resultado_bool)
+# x = 1
+# y = 30
+# resultado_bool = (x == y)
+# print(resultado_bool)
 
 
 # 20 - Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
-
+x = 1
+y = 30
+resultado_bool = (x != y)
+print(resultado_bool)
 
