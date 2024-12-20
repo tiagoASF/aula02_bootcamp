@@ -42,13 +42,21 @@
 
 
 # 7 - Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-valor1 = float(input("Informe o primeiro valor: "))
-valor2 = float(input("Informe o segundo valor: "))
-media = (valor1 + valor2) / 2
+# valor1 = float(input("Informe o primeiro valor: "))
+# valor2 = float(input("Informe o segundo valor: "))
+# media = (valor1 + valor2) / 2
 
-print(f"A média entre {valor1} e {valor2} é {media:.2f}")
+# print(f"A média entre {valor1} e {valor2} é {media:.2f}")
 
 # 8 - Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+import math
+
+base = float(input("Informe a base da potenciação: "))
+expoente = float(input("Agora forneça o exponte: "))
+
+resultado = math.pow(base, expoente)
+
+print(f"O resultado é {resultado}")
 
 # 9 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 
