@@ -49,16 +49,20 @@
 # print(f"A média entre {valor1} e {valor2} é {media:.2f}")
 
 # 8 - Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-import math
+# import math
 
-base = float(input("Informe a base da potenciação: "))
-expoente = float(input("Agora forneça o exponte: "))
+# base = float(input("Informe a base da potenciação: "))
+# expoente = float(input("Agora forneça o exponte: "))
 
-resultado = math.pow(base, expoente)
+# resultado = math.pow(base, expoente)
 
-print(f"O resultado é {resultado}")
+# print(f"O resultado é {resultado}")
 
 # 9 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+temperatura_c = float(input("Informe a temperatura em Celcius: "))
+temperatura_f = (temperatura_c * 1.8) + 32
+
+print(f"{temperatura_c}oC em Fahreheint é {temperatura_f}")
 
 # 10 - Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
