@@ -12,12 +12,16 @@
 # print(f"O resto da divisão entre {valor_usuario} e {DIVIDENDO} é {resto_divisao:.0f}")
 
 # 3 - Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
-valor1 = float(input("Informe o primeiro valor: "))
-valor2 = float(input("Informe o segundo valor: "))
-resultado_multiplicacao = valor1 * valor2
-print(f"O resultado da multiplicação é {resultado_multiplicacao}")
+# valor1 = float(input("Informe o primeiro valor: "))
+# valor2 = float(input("Informe o segundo valor: "))
+# resultado_multiplicacao = valor1 * valor2
+# print(f"O resultado da multiplicação é {resultado_multiplicacao}")
 
 # 4 - Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+valor1 = float(input("Informe o primeiro valor: "))
+valor2 = float(input("Informe o segundo valor: "))
+resultado = valor1 // valor2
+print(f"O resultado da divisão inteira de {valor1} por {valor2} é {resultado}")
 
 # 5 - Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
