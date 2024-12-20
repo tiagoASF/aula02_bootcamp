@@ -59,11 +59,18 @@
 # print(f"O resultado é {resultado}")
 
 # 9 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-temperatura_c = float(input("Informe a temperatura em Celcius: "))
-temperatura_f = (temperatura_c * 1.8) + 32
+# temperatura_c = float(input("Informe a temperatura em Celcius: "))
+# temperatura_f = (temperatura_c * 1.8) + 32
 
-print(f"{temperatura_c}oC em Fahreheint é {temperatura_f}")
+# print(f"{temperatura_c}oC em Fahreheint é {temperatura_f}")
 
 # 10 - Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+import math
 
+PI = math.pi
+raio = float(input("Qual o raio do círculo: "))
+
+area_circulo = PI * math.pow(raio,2)
+
+print(f"A área do circulo de raio {raio} é {area_circulo:.2f}")
 
