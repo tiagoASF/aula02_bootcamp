@@ -140,20 +140,30 @@
 # Exercício 21: Conversor de Temperatura
 # Escreva um programa que converta a temperatura de Celsius para Fahrenheit. O programa deve solicitar ao usuário a temperatura em Celsius e, utilizando try-except, garantir que a entrada seja numérica, tratando qualquer ValueError. Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida.
 
-try:
-    t_celcius = float(input("Informe a temperatura em Celcius: "))
-    t_farenheit = (t_celcius * 9/5) + 32
-    print(f"{t_celcius}oC equivalem a {t_farenheit}oF")
-except ValueError as e: 
-    print("O valor de temperatura deve ser numérico")
-
-
-
-
+# try:
+#     t_celcius = float(input("Informe a temperatura em Celcius: "))
+#     t_farenheit = (t_celcius * 9/5) + 32
+#     print(f"{t_celcius}oC equivalem a {t_farenheit}oF")
+# except ValueError as e: 
+#     print("O valor de temperatura deve ser numérico")
 
 
 # Exercício 22: Verificador de Palíndromo
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). Utilize try-except para garantir que a entrada seja uma string. Dica: Utilize a função isinstance() para verificar o tipo da entrada.
+palavra = input("Informe a palavra ou frase: ").strip()
+
+if isinstance(palavra, str):
+    palavra_tratada = palavra.replace(" ", "").lower()
+    if palavra_tratada == palavra_tratada[::-1]:
+        print(f"{palavra.upper()} é um palindromo")
+    else:
+        print(f"{palavra.upper()} não é um palindromo")
+else:
+    print("Você deve digitar uma frase ou palavra!")
+
+
+
+
 
 # Exercício 23: Calculadora Simples
 # Desenvolva uma calculadora simples que aceite duas entradas numéricas e um operador (+, -, *, /) do usuário. Use try-except para lidar com divisões por zero e entradas não numéricas. Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.
