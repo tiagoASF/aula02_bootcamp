@@ -202,22 +202,38 @@
 # Escreva um programa que solicite ao usuário para digitar um número. Utilize try-except para assegurar que a entrada seja numérica e utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". Adicionalmente, identifique se o número é "par" ou "ímpar".
 
 
-try:
-    valor = int(input("Informe o valor inteiro desejado: "))
-    positivo_negativo = "positivo"
-    par_impar = "par"
+# try:
+#     valor = int(input("Informe o valor inteiro desejado: "))
+#     positivo_negativo = "positivo"
+#     par_impar = "par"
 
-    if valor % 2 != 0:
-        par_impar = "ímpar"
+#     if valor % 2 != 0:
+#         par_impar = "ímpar"
 
-    if valor < 0:
-        positivo_negativo = "negativo"
-    elif valor == 0:
-        positivo_negativo = "zero"
+#     if valor < 0:
+#         positivo_negativo = "negativo"
+#     elif valor == 0:
+#         positivo_negativo = "zero"
     
-    print(f"O valor {valor} é {positivo_negativo} e {par_impar}")
-except ValueError as e:
-    print("O valor informado deve ser numérico")
+#     print(f"O valor {valor} é {positivo_negativo} e {par_impar}")
+# except ValueError as e:
+#     print("O valor informado deve ser numérico")
 
 # Exercício 25: Conversão de Tipo com Validação
 # Crie um script que solicite ao usuário uma lista de números separados por vírgula. O programa deve converter a string de entrada em uma lista de números inteiros. Utilize try-except para tratar a conversão de cada número e validar que cada elemento da lista convertida é um inteiro. Se a conversão falhar ou um elemento não for um inteiro, imprima uma mensagem de erro. Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.
+
+valores = input("Informe os valores separados por vírgula: ")
+lista_valores = valores.split(",")
+lista_tratada = []
+
+try:
+    for valor in lista_valores:
+        lista_tratada.append(int(valor.strip()))
+    print(lista_tratada)
+except ValueError as e:
+    print("Certifique-se de todos valores inseridos serem inteiros")
+        
+
+
+
+
