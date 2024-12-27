@@ -150,23 +150,53 @@
 
 # Exercício 22: Verificador de Palíndromo
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). Utilize try-except para garantir que a entrada seja uma string. Dica: Utilize a função isinstance() para verificar o tipo da entrada.
-palavra = input("Informe a palavra ou frase: ").strip()
+# palavra = input("Informe a palavra ou frase: ").strip()
 
-if isinstance(palavra, str):
-    palavra_tratada = palavra.replace(" ", "").lower()
-    if palavra_tratada == palavra_tratada[::-1]:
-        print(f"{palavra.upper()} é um palindromo")
-    else:
-        print(f"{palavra.upper()} não é um palindromo")
-else:
-    print("Você deve digitar uma frase ou palavra!")
-
-
-
+# if isinstance(palavra, str):
+#     palavra_tratada = palavra.replace(" ", "").lower()
+#     if palavra_tratada == palavra_tratada[::-1]:
+#         print(f"{palavra.upper()} é um palindromo")
+#     else:
+#         print(f"{palavra.upper()} não é um palindromo")
+# else:
+#     print("Você deve digitar uma frase ou palavra!")
 
 
 # Exercício 23: Calculadora Simples
 # Desenvolva uma calculadora simples que aceite duas entradas numéricas e um operador (+, -, *, /) do usuário. Use try-except para lidar com divisões por zero e entradas não numéricas. Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.
+
+try:
+    valor1 = float(input("Informe o primeiro valor: "))
+except ValueError as e:
+    print("O valor digitado não é numérico")
+
+try:
+    valor2 = float(input("Informe o segundo valor: "))
+except ValueError as e:
+    print("O valor digitado não é numérico")
+
+try:
+    operacao = input("Qual operação(+, -, *, /) deseja realizar: ").strip()
+except TypeError as e:
+    print("O valor digitado não é uma string válida")
+
+if operacao == "+":
+    print(f"A soma entre {valor1} e {valor2} é {valor1 + valor2}")
+elif operacao == "-":
+    print(f"A subtração de {valor1} por {valor2} é {valor1 - valor2}")
+elif operacao == "*":
+    print(f"A multiplicação  entre {valor1} e {valor2} é {valor1 * valor2}")
+elif operacao == "/":
+    try:
+        print(f"A divisão de {valor1} por {valor2} é {valor1 / valor2}")
+    except ZeroDivisionError as e:
+        print("A divisão por zero não é válida")
+    
+else:
+    print(f"{operacao} não é uma operação válida")
+
+
+
 
 # Exercício 24: Classificador de Números
 # Escreva um programa que solicite ao usuário para digitar um número. Utilize try-except para assegurar que a entrada seja numérica e utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". Adicionalmente, identifique se o número é "par" ou "ímpar".
